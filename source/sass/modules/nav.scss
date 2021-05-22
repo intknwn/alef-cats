@@ -1,0 +1,38 @@
+.nav {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  max-width: 600px;
+}
+
+.nav__list-item {
+  margin-right: 60px;
+
+  &:first-child {
+    margin-right: 70px;
+  }
+
+  &:last-child {
+    margin-left: -5px;
+    margin-right: 0;
+  }
+}
+
+.nav__list-item a {
+  color: $white;
+  font-weight: 400;
+  font-size: 18px;
+
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $aqua;
+  }
+}

@@ -1,0 +1,60 @@
+.header {
+  color: $white;
+
+  background-image:
+    linear-gradient(90deg, rgba(31, 32, 33, 0.75) 0%, rgba(31, 32, 33, 0.75) 100%),
+    url("../../img/header-bg@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__container {
+  min-height: 252px;
+}
+
+.header h1 {
+  margin-left: -3px;
+
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+}
+
+.header__wrapper {
+  display: flex;
+
+  padding-top: 26px;
+  margin-bottom: 36px;
+}
+
+.header__logo {
+  max-height: 78px;
+  margin-right: 120px;
+}
+
+.header__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.header__contacts p {
+  text-align: right;
+}
+
+.header__phone {
+  color: $white;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  text-decoration: none;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $aqua;
+  }
+}
