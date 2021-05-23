@@ -1,0 +1,61 @@
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters p {
+  margin-right: 38px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.filters__list {
+  display: flex;
+}
+
+.filters__list-item {
+  display: flex;
+
+  height: 22px;
+
+  margin-right: 35px;
+}
+
+.filters__button {
+  position: relative;
+
+  padding: 0;
+  padding-right: 40px;
+  padding-left: 10px;
+
+  background-color: transparent;
+  border: none;
+
+  font-size: 18px;
+  line-height: 22px;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:focus {
+    color: $aqua;
+  }
+
+  &::before {
+    content: url("../../img/icon-arrow-down.svg");
+
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    width: 15px;
+    height: 15px;
+  }
+
+  &--age {
+    padding-right: 50px;
+  }
+}

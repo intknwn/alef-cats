@@ -1,0 +1,145 @@
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  max-width: 380px;
+
+  background-color: $grey;
+  border-radius: 0 0 15px 15px;
+}
+
+.card__desc {
+  padding: 29px;
+}
+
+.card__desc h3 {
+  padding-bottom: 22px;
+
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__details {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.card__color {
+  position: relative;
+
+  width: 89px;
+
+  margin-right: 20px;
+  padding-left: 22px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 4px;
+    height: 80%;
+
+    background-color: $aqua;
+  }
+}
+
+.card__age {
+  margin-right: 47px;
+}
+
+.card__details-number {
+  display: block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.card__price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.card__discount {
+  position: absolute;
+  top: 33px;
+  left: 37px;
+
+  padding: 9px 19px;
+
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: $red;
+  border-radius: 10px;
+}
+
+.card__button {
+  min-height: 65px;
+
+  color: $white;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: $aqua;
+  border: none;
+  border-radius: 0 0 15px 15px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+  &--sold {
+    background-color: $darkgrey;
+
+    &:hover,
+    &:active,
+    &:focus {
+      cursor: unset;
+      opacity: unset;
+    }
+  }
+}
+
+.card__fav-button {
+  position: absolute;
+  top: 32px;
+  right: 27px;
+
+  background-color: transparent;
+  border: none;
+
+  opacity: 0.5;
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &--active {
+    opacity: 1;
+
+    &:hover,
+    &:active,
+    &:focus {
+      opacity: 1;
+    }
+  }
+}
