@@ -1,8 +1,14 @@
 .container {
   box-sizing: border-box;
-  max-width: $desktop-width;
+  max-width: $content-width;
 
   padding: 0 50px;
 
   margin: 0 auto;
+}
+
+@media (max-width: $mobile-width) {
+  .container {
+    padding: 0 20px;
+  }
 }

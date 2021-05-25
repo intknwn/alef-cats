@@ -1,0 +1,126 @@
+.form {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.form input[type="email"] {
+  box-sizing: border-box;
+  flex: 1 1 300px;
+  height: 65px;
+
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding-left: 33px;
+
+  color: $black;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: $white;
+  border: none;
+  border-radius: 10px;
+
+  &:focus {
+    padding-left: 30px;
+    border: 3px solid $aqua;
+    outline: none;
+  }
+}
+
+.form input[name="subscribe"]:checked + label > span {
+  &::after {
+    content: url("../../img/icon-tick.svg");
+
+    position: absolute;
+    top: 0;
+    left: 4px;
+
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.form input[name="subscribe"]:focus + label {
+  color: $aqua;
+}
+
+.form input[type="email"]::placeholder {
+  color: $black;
+}
+
+.form label[for="subscribe"] {
+  display: flex;
+}
+
+.form label[for="subscribe"] > span {
+  position: relative;
+
+  padding-left: 36px;
+
+  font-size: 14px;
+  line-height: 17px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 18px;
+    height: 18px;
+
+    background-color: $aqua;
+    border-radius: 3px;
+  }
+}
+
+.form button[type="submit"] {
+  box-sizing: border-box;
+  flex: 1 1 250px;
+
+  margin-bottom: 15px;
+  margin-left: 15px;
+
+  height: 65px;
+
+  color: $white;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+
+  background-color: $aqua;
+  border: none;
+  border-radius: 10px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+
+.form__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: -15px;
+
+  margin-bottom: 10px;
+}
+
+@media (max-width: $mobile-sm-width) {
+  .form__content {
+    margin-left: 0;
+  }
+
+  .form input[type="email"],
+  .form button[type="submit"] {
+    margin-left: 0;
+
+    width: 100%;
+  }
+}

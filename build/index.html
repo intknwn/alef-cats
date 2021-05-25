@@ -21,6 +21,9 @@
         <a class="header__logo">
           <img src="img/logo.svg" width="78" height="78" alt="Логотип компании">
         </a>
+        <button class="header__nav-toggle" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
         <nav class="nav header__nav">
           <ul class="nav__list">
             <li class="nav__list-item"><a href="#">Main</a></li>
@@ -55,8 +58,11 @@
         <ul class="results__list">
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-01@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-01@1x.webp 1x, img/cat-01@2x.webp 2x">
+                <img src="img/cat-01@1x.jpg" srcset="img/cat-01@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -71,7 +77,7 @@
                 </div>
                 <p class="card__price">30 000 руб.</p>
                 <p class="card__discount">-40%</p>
-              </section>
+              </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -83,8 +89,11 @@
           </li>
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-02@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-02@1x.webp 1x, img/cat-02@2x.webp 2x">
+                <img src="img/cat-02@1x.jpg" srcset="img/cat-02@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -98,7 +107,7 @@
                   </p>
                 </div>
                 <p class="card__price">40 000 руб.</p>
-              </section>
+              </div>
               <button class="card__button card__button--sold" type="button" disabled="">Продан</button>
               <button class="card__fav-button card__fav-button--active" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -110,8 +119,11 @@
           </li>
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-03@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-03@1x.webp 1x, img/cat-03@2x.webp 2x">
+                <img src="img/cat-03@1x.jpg" srcset="img/cat-03@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -125,7 +137,7 @@
                   </p>
                 </div>
                 <p class="card__price">20 000 руб.</p>
-              </section>
+              </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -137,8 +149,11 @@
           </li>
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-01@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-01@1x.webp 1x, img/cat-01@2x.webp 2x">
+                <img src="img/cat-01@1x.jpg" srcset="img/cat-01@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -152,7 +167,7 @@
                   </p>
                 </div>
                 <p class="card__price">25 000 руб.</p>
-              </section>
+              </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -164,8 +179,11 @@
           </li>
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-03@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-03@1x.webp 1x, img/cat-03@2x.webp 2x">
+                <img src="img/cat-03@1x.jpg" srcset="img/cat-03@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -180,7 +198,7 @@
                 </div>
                 <p class="card__price">30 000 руб.</p>
                 <p class="card__discount">-40%</p>
-              </section>
+              </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -192,8 +210,11 @@
           </li>
           <li class="results__list-item">
             <article class="results__item card">
-              <img src="img/cat-02@1x.jpg" width="380" height="264" alt="Кот полосатый">
-              <section class="card__desc">
+              <picture>
+                <source type="image/webp" srcset="img/cat-02@1x.webp 1x, img/cat-02@2x.webp 2x">
+                <img src="img/cat-02@1x.jpg" srcset="img/cat-02@2x.jpg 2x" width="380" height="264" alt="Кот полосатый">
+              </picture>
+              <div class="card__desc">
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
@@ -207,7 +228,7 @@
                   </p>
                 </div>
                 <p class="card__price">10 000 руб.</p>
-              </section>
+              </div>
               <button class="card__button card__button--sold" type="button" disabled="">Купить</button>
               <button class="card__fav-button card__fav-button--active" type="button">
                 <span class="visually-hidden">Добавить в избранное</span>
@@ -225,6 +246,24 @@
             <use href="img/sprite_auto.svg#icon-arrow-up"></use>
           </svg>
         </button>
+      </section>
+      <section class="subscribe">
+        <div class="subscribe__desc">
+          <h2 class="visually-hidden">Подписка на новости</h2>
+          <strong>Успей купить!</strong>
+          <p>Подпишись и&nbsp;успей словить все акции</p>
+        </div>
+        <form action="#" class="subscribe__form form">
+          <div class="form__content">
+            <label class="visually-hidden">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button type="submit">Подписаться</button>
+          </div>
+          <input class="visually-hidden" type="checkbox" name="subscribe" id="subscribe">
+          <label for="subscribe">
+            <span>Подписаться на новости</span>
+          </label>
+        </form>
       </section>
     </div>
   </main>

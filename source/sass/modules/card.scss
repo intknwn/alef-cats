@@ -3,10 +3,19 @@
   display: flex;
   flex-direction: column;
 
-  max-width: 380px;
-
   background-color: $grey;
   border-radius: 0 0 15px 15px;
+}
+
+.card img {
+  display: block;
+
+  max-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 .card__desc {
@@ -141,5 +150,34 @@
     &:focus {
       opacity: 1;
     }
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .card__discount {
+    top: 23px;
+    left: 27px;
+  }
+
+  .card__fav-button {
+    top: 22px;
+    right: 17px;
+  }
+
+  .card__color {
+    margin-bottom: 20px;
+  }
+
+  .card__age,
+  .card__legs {
+    margin-bottom: 10px;
+  }
+
+  .card__details {
+    flex-direction: column;
+  }
+
+  .card__price {
+    text-align: right;
   }
 }
