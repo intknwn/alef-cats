@@ -91,6 +91,10 @@
     background-position: center;
 
     z-index: 2;
+
+    &--toggled {
+      background-image: url("../img/icon-menu-close.svg");
+    }
   }
 
   .header__contacts {

@@ -13,6 +13,7 @@
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/montserrat-v14-latin_cyrillic-regular.woff" as="font" type="font/woff" crossorigin="anonymous">
 
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -68,7 +69,7 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
+                  <p class="card__age" data-age="2">
                     <span class="card__details-number">2 мес.</span>
                     <span>Возраст</span>
                   </p>
@@ -77,7 +78,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">30 000 руб.</p>
+                <p class="card__price" data-price="30000">30 000 руб.</p>
                 <p class="card__discount">-40%</p>
               </div>
               <button class="card__button" type="button">Купить</button>
@@ -96,7 +97,7 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
+                  <p class="card__age" data-age="2">
                     <span class="card__details-number">2 мес.</span>
                     <span>Возраст</span>
                   </p>
@@ -105,7 +106,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">40 000 руб.</p>
+                <p class="card__price" data-price="40000">40 000 руб.</p>
               </div>
               <button class="card__button card__button--sold" type="button" disabled="">Продан</button>
               <button class="card__fav-button card__fav-button--active" type="button">
@@ -123,8 +124,8 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
-                    <span class="card__details-number">2 мес.</span>
+                  <p class="card__age" data-age="3">
+                    <span class="card__details-number">3 мес.</span>
                     <span>Возраст</span>
                   </p>
                   <p class="card__legs">
@@ -132,7 +133,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">20 000 руб.</p>
+                <p class="card__price" data-price="20000">20 000 руб.</p>
               </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
@@ -150,8 +151,8 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
-                    <span class="card__details-number">2 мес.</span>
+                  <p class="card__age" data-age="4">
+                    <span class="card__details-number">4 мес.</span>
                     <span>Возраст</span>
                   </p>
                   <p class="card__legs">
@@ -159,7 +160,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">25 000 руб.</p>
+                <p class="card__price" data-price="25000">25 000 руб.</p>
               </div>
               <button class="card__button" type="button">Купить</button>
               <button class="card__fav-button" type="button">
@@ -177,8 +178,8 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
-                    <span class="card__details-number">2 мес.</span>
+                  <p class="card__age" data-age="6">
+                    <span class="card__details-number">6 мес.</span>
                     <span>Возраст</span>
                   </p>
                   <p class="card__legs">
@@ -186,7 +187,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">30 000 руб.</p>
+                <p class="card__price" data-price="30000">30 000 руб.</p>
                 <p class="card__discount">-40%</p>
               </div>
               <button class="card__button" type="button">Купить</button>
@@ -205,8 +206,8 @@
                 <h3>Кот полосатый</h3>
                 <div class="card__details">
                   <p class="card__color">Коричневый окрас</p>
-                  <p class="card__age">
-                    <span class="card__details-number">2 мес.</span>
+                  <p class="card__age" data-age="7">
+                    <span class="card__details-number">7 мес.</span>
                     <span>Возраст</span>
                   </p>
                   <p class="card__legs">
@@ -214,7 +215,7 @@
                     <span>Кол-во лап</span>
                   </p>
                 </div>
-                <p class="card__price">10 000 руб.</p>
+                <p class="card__price" data-price="10000">10 000 руб.</p>
               </div>
               <button class="card__button card__button--sold" type="button" disabled="">Купить</button>
               <button class="card__fav-button card__fav-button--active" type="button">
@@ -248,6 +249,10 @@
       </section>
     </div>
   </main>
+
+  <script src="js/toastify.js"></script>
+  <script src="js/report-validity.umd.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
