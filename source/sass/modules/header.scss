@@ -4,7 +4,7 @@
   background-color: $darkgrey;
   background-image:
     linear-gradient(90deg, rgba(31, 32, 33, 0.75) 0%, rgba(31, 32, 33, 0.75) 100%),
-    url("../../img/header-bg@1x.jpg");
+    url("../img/header-bg@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
   @media (min-resolution: $retina-dppx) {
     background-image:
       linear-gradient(90deg, rgba(31, 32, 33, 0.75) 0%, rgba(31, 32, 33, 0.75) 100%),
-      url("../../img/header-bg@2x.jpg");
+      url("../img/header-bg@2x.jpg");
   }
 }
 
@@ -57,6 +57,7 @@
   font-size: 24px;
   line-height: 29px;
 
+  text-align: right;
   text-decoration: none;
   white-space: nowrap;
 
@@ -85,7 +86,7 @@
     width: 50px;
     height: 50px;
 
-    background-image: url("../../img/icon-menu-open.svg");
+    background-image: url("../img/icon-menu-open.svg");
     background-repeat: no-repeat;
     background-position: center;
 

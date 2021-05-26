@@ -19,11 +19,13 @@
 }
 
 .subscribe__desc {
+  flex: 0 1 auto;
   display: flex;
   flex-direction: column;
 
-  min-width: 454px;
+  box-sizing: border-box;
 
+  margin-right: 30px;
   margin-bottom: 30px;
 }
 
@@ -43,6 +45,10 @@
 }
 
 @media (max-width: $tablet-width) {
+  .subscribe {
+    flex-direction: column;
+  }
+
   .subscribe__desc {
     margin-bottom: 30px;
   }

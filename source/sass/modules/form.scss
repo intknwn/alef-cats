@@ -1,15 +1,17 @@
 .form {
   display: flex;
-  flex-grow: 1;
   flex-direction: column;
+
+  min-width: 566px;
 }
 
 .form input[type="email"] {
   box-sizing: border-box;
-  flex: 1 1 300px;
+  flex: 0 1 300px;
+
   height: 65px;
 
-  margin-left: 15px;
+  margin-right: 16px;
   margin-bottom: 15px;
   padding-left: 33px;
 
@@ -30,7 +32,7 @@
 
 .form input[name="subscribe"]:checked + label > span {
   &::after {
-    content: url("../../img/icon-tick.svg");
+    content: url("../img/icon-tick.svg");
 
     position: absolute;
     top: 0;
@@ -51,6 +53,11 @@
 
 .form label[for="subscribe"] {
   display: flex;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
 
 .form label[for="subscribe"] > span {
@@ -78,10 +85,9 @@
 
 .form button[type="submit"] {
   box-sizing: border-box;
-  flex: 1 1 250px;
+  flex: 0 1 250px;
 
   margin-bottom: 15px;
-  margin-left: 15px;
 
   height: 65px;
 
@@ -107,20 +113,28 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  margin-left: -15px;
-
   margin-bottom: 10px;
+}
+
+@media (max-width: $tablet-width) {
+  .form {
+    min-width: 0;
+  }
+
+  .form__content {
+    flex-direction: column;
+  }
+
+  .form input[type="email"],
+  .form button[type="submit"] {
+    flex: 0 1 auto;
+
+    margin-right: 0;
+  }
 }
 
 @media (max-width: $mobile-sm-width) {
   .form__content {
     margin-left: 0;
-  }
-
-  .form input[type="email"],
-  .form button[type="submit"] {
-    margin-left: 0;
-
-    width: 100%;
   }
 }

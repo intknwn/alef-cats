@@ -19,9 +19,9 @@
 }
 
 .results__list-item {
-  flex: 1 0 289.6px;
+  flex: 1 1 290px;
 
-  max-width: 380px;
+  min-width: 0px; // ie11 fix
 
   margin: 27px 0 0 20px;
 }
@@ -74,19 +74,12 @@
 
 @media (max-width: $tablet-width) {
   .results__list-item {
-    flex: 1 0 290px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .results {
     padding-bottom: 59px;
-  }
-
-  .results__list-item {
-    flex: 1 0 220px;
-
-    margin-right: 0;
   }
 }
 
